@@ -1,7 +1,7 @@
 FROM dclong/jupyterhub-jdk
 
-RUN apt-get update -y \
-    && apt-get install -y antlr4 \
+RUN apt-get -y update \
+    && apt-get -y install antlr4 \
     && apt-get autoremove \
     && apt-get autoclean 
 
